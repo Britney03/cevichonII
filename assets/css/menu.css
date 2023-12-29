@@ -1,0 +1,69 @@
+.menu .btn{
+    color: #000;
+    display: inline-block;
+}
+.botones-platillos{
+    margin-top: -60px;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.botones-platillos button{
+    flex: 0 0 calc(33.3% - 1rem);
+    padding: 1rem 3rem;
+}
+
+.btn.activo {
+    color: #fff;
+    background-color: #6bb3c7;
+}
+
+@media(min-width: 768px) {
+    .botones-platillos{
+        display: inline-block;
+    }
+    .botones-platillos button{
+        flex: unset;
+    }
+}
+@media(min-width: 768px) {
+    .platillos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+}
+
+
+.platillo{
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 1px solid #e1e1e1;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.platillo img{
+    max-width: 100%;
+    height: 300px;
+    padding: 3rem;
+}
+.platillo h2{
+    color: #000;
+    text-align: center;
+}
+.platillo p{
+    font-size: 1.8rem;
+    color: #000;
+}
+.platillo img{
+    margin: auto;
+}
+.precio{
+    justify-content: space-between;
+}
+.precio p{
+    font-weight: bold;
+    font-size: 2rem;
+}

@@ -1,0 +1,427 @@
+/* font-family */
+:root {
+    --fontFamily-forum: 'Forum', cursive;
+    --fontFamily-dm_sans: 'DM Sans', sans-serif;
+    --transition-2: 0.5s ease;
+
+}
+/*crtl + i*/
+
+.sectiond { padding-block: 0px; }
+    .cloud { width: 70%; }
+    
+
+ 
+
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily-forum);
+}
+
+
+
+
+/*CARRUSEL*/
+
+.carusel{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F6FF;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: 2500;
+    color: #180000;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.title::after {
+    content: url('../images/separator.svg');
+    display: block;
+    width: 100px;
+    margin-inline: auto;
+    margin-block-start: 5px;
+  }
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: -30px 30px;
+}
+.card{
+    /*width: 320px;*/
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+.slide-content{
+   
+    margin: 0px 40px 50px 80px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.fondoimg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #6bb3c7;
+    border-radius: 25px 25px 0 25px;
+    opacity: 1;
+}
+.fondoimg::before,
+.fondoimg::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #6bb3c7;
+}
+.fondoimg::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+.card-image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00A8B1;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    font-weight: bolder;
+}
+.description{
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 8px 16px;
+    background-color: #00A8B1;
+    border-radius: 8px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background-color: #275376;
+}
+
+.swiper-navBtn{
+    color: #275376;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: #00A8B1;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prevt{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: #275376;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #00A8B1;
+    opacity: 1;
+}
+
+
+
+
+/*-----------------------------------*\
+  #DELIVERY
+\*-----------------------------------*/
+
+.delivery{
+    background-image: url('../images/cocina-marina.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    padding-block: 0px;
+}
+.delivery::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+.delivery-content { margin-block-end: 40px; }
+
+.delivery .container{
+    padding: 30px;
+    /*display: flex;
+    justify-content: space-between*/
+}
+
+.delivery .section-title {
+  max-width: 17ch;
+  line-height: 1.6;
+  letter-spacing: -2px;
+  
+}
+
+.delivery .section-text { margin-block: 15px 25px; }
+
+.delivery-banner {
+    position: relative;
+  margin-block-end: 10px;
+  /*position: absolute;
+  aspect-ratio: 1 / 0.86;
+/* Add these styles to position the delivery banner */
+
+    
+}
+
+.delivery-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-80px);
+  transition: var(--transition-2);
+}
+
+.delivery .span{
+    color: #80dbdf;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-size: 65px;
+}
+.delivery .section-text{
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    
+}
+.delivery .section-title{
+    font-size: 70px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*CONTACTO*/
+
+.contacto{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+
+}
+.contacto .container{
+    display: flex;
+    position: relative;
+    padding: 50px 0px 50px 0px;
+    justify-content: center;
+    max-width: 1120px;
+    width: 9000000%;
+    
+  }
+  .contacto .card{
+    width: 1080%;
+    border-radius: 25px;
+    background-color: #A2D2DC;
+    padding: 10px 30px 20px;
+    margin-right: 20px;
+  }
+  .map-container {
+    width: 800%; /* Establece el ancho deseado */
+    height: 480px;
+    border-radius: 40px; /* Establece el radio de 10px para todas las esquinas */
+    box-shadow: 0px 0px 50px #00A8B1; /* Establece la sombra de la caja */
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  .map-container iframe {
+    width: 100%; /* El mapa ocupará el 100% del ancho del contenedor */
+    height: 100%; /* El mapa ocupará el 100% del alto del contenedor */
+    border: 0; /* Elimina cualquier borde que pueda tener el mapa */
+    position: relative; /* Permite que el mapa ocupe toda la caja */
+    top: 0;
+    left: 0;
+  }
+  .container .form-control{
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    border: 1px solid #ffffff;
+    background-color: white;
+    outline: none;
+    color: #000000;
+    border-radius: 10px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  .contacto .title{
+    font-size: 30px;
+    font-weight: 2500;
+    color: #180000;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .map-container #googleMap {
+    height: 100%;
+    min-height: 200%;
+    width: 100%;
+  }
+  
+
+
+
+
+@media (min-width: 550px) {
+
+    /**
+     * REUSED STYLE
+     */
+  
+    .container {
+      max-width: 550px;
+      width: 100%;
+      margin-inline: auto;
+    }
+}
+@media (min-width: 768px) {
+
+    .container { max-width: 720px; }
+    .delivery .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: self-start;
+      gap: 50px;
+    }
+   
+}  
+
+@media screen and (max-width: 768px){
+
+   /**
+   * Carrusel
+   */
+    .swiper-navBtn{
+        display: none;
+    }
+    .slide-content{
+        margin: 0 10px;
+    }
+    .image-content{
+        padding: 25px 0;
+    }
+    .card-image{
+        width: 100px;
+        height: 100px;
+    }
+    .name{
+        font-size: 16px;
+    }
+    .description{
+        font-size: 12px;
+    }
+    .button{
+        font-size: 14px;
+    }
+    .swiper-navBtn::before,
+    .swiper-navBtn::after{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+      --section-padding: 120px;
+    }
+  
+    .container { max-width: 960px; }}
+
+    /**
+ * responsive for larger than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 1200px; }}
+
+    
+    
+    .footer::before{
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
